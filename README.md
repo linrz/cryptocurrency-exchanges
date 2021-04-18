@@ -1,5 +1,8 @@
 # TASK(Cryptocurrency Exchanges)
 
+![ci](https://api.travis-ci.com/linrz/cryptocurrency-exchanges.svg?branch=master)
+![codecov](https://codecov.io/gh/linrz/cryptocurrency-exchanges/branch/master/graph/badge.svg)
+
 ## Requirements
 
 Using the Coingecko [public API](https://www.coingecko.com/en/api), build an application that will serve as a directory of cryptocurrency exchanges. The main page should be a list with pagination of the first ten exchanges with some high-level information (name, country, URL, logo, trust rank).
