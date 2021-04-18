@@ -1,0 +1,40 @@
+@import './color.scss';
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.main__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.main {
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  &__header {
+    background: $page-bg-color;
+    border-bottom: 1px solid $border-color;
+    color: #333;
+  }
+
+  &__footer {
+    background: $page-bg-color;
+    border-top: 1px solid $border-color;
+    text-align: center;
+  }
+
+  &__layout {
+    background: $page-bg-color;
+  }
+}

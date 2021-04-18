@@ -1,0 +1,17 @@
+.name-cell {
+  display: flex;
+  align-items: center;
+
+  &__logo {
+    img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+    }
+  }
+
+  &__text {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+}

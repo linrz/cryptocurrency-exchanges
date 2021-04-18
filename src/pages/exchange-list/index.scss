@@ -1,0 +1,14 @@
+.exchange-list {
+  &__unit {
+    width: 16px;
+    height: 16px;
+  }
+
+  &__icon {
+    cursor: pointer;
+  }
+
+  &__score {
+    white-space: nowrap;
+  }
+}
