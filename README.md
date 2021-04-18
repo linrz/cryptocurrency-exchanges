@@ -15,6 +15,7 @@ When the user clicks on an exchange, show its details on a separate page. Includ
 2. Use `fetch` to request the server, low version browsers(IE11, Chrome45) need to import polyfills, such as `isomorphic-fetch`. `Promise.prototype.finally` also needs polyfill.
 3. Some components in `ant-design` such as `<Table />` and `<List />` are used to speed up development.
 4. Instead of `styled-components` as mentioned in task, I prefer `BEM` and `CSS Module` to avoid style conflicts. I wrote a simple blog([why I dislike styled-components](https://linrz.me/2018/05/14/why-i-unlike-styled-components/)) to explain during my internship, why I don’t like it. Maybe some of these views are now outdated.
+5. Use `vite` as ESM based dev server, I choose to hug esmodule to get a better development experience.
 
 ## Preview
 

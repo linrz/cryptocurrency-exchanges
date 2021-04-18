@@ -5,7 +5,12 @@ import { QuestionCircleOutlined } from '@ant-design/icons'
 
 import { get } from '@/common/request'
 import BlankLink from '@/components/blank-link'
-import { toThousands, getImageCDNUrl, getTrustScoreColor } from '@/common/utils'
+import {
+  toThousands,
+  getImageCDNUrl,
+  getTrustScoreColor,
+  buildSorterBySpecKey,
+} from '@/common/utils'
 import {
   DEFAULT_ERROR_TEXT,
   DEFAULT_PAGE_SIZE,
@@ -22,7 +27,7 @@ const columns = [
     key: 'trustScoreRank',
     fixed: true,
     width: '10%',
-    sorter: (prev, next) => prev.trustScoreRank - next.trustScoreRank,
+    sorter: buildSorterBySpecKey('trustScoreRank'),
   },
   {
     title: 'Name',
@@ -72,7 +77,7 @@ const columns = [
     dataIndex: 'tradeVolume24hBtcStr',
     align: 'right',
     width: '25%',
-    sorter: (prev, next) => prev.tradeVolume24hBtc - next.tradeVolume24hBtc,
+    sorter: buildSorterBySpecKey('tradeVolume24hBtc'),
   },
   {
     title: 'Country',

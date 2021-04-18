@@ -60,3 +60,7 @@ export function toStandardDateStr(time) {
     day > 9 ? day : `0${day}`
   }`
 }
+
+export function buildSorterBySpecKey(key) {
+  return (prev, next) => prev[key] - next[key]
+}
